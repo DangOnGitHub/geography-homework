@@ -22,9 +22,27 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body,h1,h2,h3,h4,h5,h6,p {
+        font-family: "Lato", sans-serif; 
+      }
+      p{
+        font-size: 17px;
+      }
+      li{
+        font-size: 19px;
+      }
+      .title{
+        transform: translate(-50%, 50%) !important;
+      }
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+    </style>
+    <!-- <style media="screen">
+      
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
       #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
       #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
@@ -34,12 +52,18 @@
       #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
       @media (max-width: 600px) {
         body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+        /* body { border-top: 16px solid #ffa100; } */
       }
-    </style>
+    </style> -->
   </head>
   <body>
-    <h1>Tây Nam Á</h1>
+    <!-- <h1>Tây Nam Á</h1> -->
+    <div class="w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle title" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Tây Nam Á</span>
+      </div>
+    </div>
+    <div class="w3-content w3-container w3-padding-64">
     <h3>Lịch sử hình thành và phát triển</h3>
     <p>"Tây Á" được sử dụng với tư cách là thuật ngữ địa lý vào đầu thế kỷ 19, thậm chí từ trước khi "Cận Đông" trở nên thịnh hành với tư cách là một khái niệm địa chính trị.Trong bối cảnh lịch sử thời đại cổ điển, "Tây Á" có nghĩa là bộ phận của châu Á quen thuộc với người Hy Lạp-La Mã cổ đại, trái ngược với phạm vi "Nội Á", tức Scythia, và "Đông Á" là phạm vi cực đông trong kiến thức địa lý của các tác giả Hy-La cổ đại, tức là Transoxiana và Ấn Độ.
       Trong thế kỷ 20, "Tây Á" được sử dụng để biểu thị một khu vực địa lý gần đúng trong các lĩnh vực khảo cổ học và lịch sử cổ đại, đặc biệt là để làm một từ tắt cho "Trăng lưỡi liềm Màu mỡ ngoại trừ Ai Cập cổ đại" nhằm mục đích so sánh các nền văn minh sơ khởi của Ai Cập và Tây Á.
@@ -51,7 +75,10 @@
       <li>
         Vị trí địa lí
         <p>Tây Nam Á nằm ở vị trí ngã ba của ba châu lục Á,  u, Phi, là khu vực nhiều núi và cao nguyên, có khí hậu khô hạn và có nguồn tài nguyên dầu mỏ rất phong phú.</p>
-        <img src="west-asia.jpg" alt="Vị trí địa lí Tây Á">
+        <!-- <img src="west-asia.jpg" alt="Vị trí địa lí Tây Á"> -->
+        <img src="west-asia.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Vị trí địa lí Tây Á" 
+        >
+
       </li>
       <li>
         Khí hậu
@@ -114,7 +141,7 @@
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
     <p id="load">Firebase SDK Loading&hellip;</p> -->
-
+  </div>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
